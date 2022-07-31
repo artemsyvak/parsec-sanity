@@ -9,6 +9,8 @@ import showreel from './showreel'
 import project from './project'
 import service from './service'
 import clients from './clients'
+import team from './team'
+import feedback from './feedback'
 import productVariant from './productVariant'
 
 import localeString from './locale/String'
@@ -28,6 +30,8 @@ export default createSchema({
     service,
     project,
     clients,
+    team,
+    feedback,
     // When added to this list, object types can be used as
     // { type: 'typename' } in other document schemas
     blockContent,
