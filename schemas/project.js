@@ -1,8 +1,21 @@
+import { FileSearchableSelect } from '../components/FileSearchableSelect'
+
 export default {
   name: 'project',
   title: 'Projects',
   type: 'document',
   fields: [
+    {
+      name: 'videoId',
+      title: 'Video',
+      type: 'string',
+      inputComponent: FileSearchableSelect,
+    },
+    {
+      name: 'serviceType',
+      title: 'Service Type',
+      type: 'string'
+    },
     {
       name: 'title',
       title: 'Title',      

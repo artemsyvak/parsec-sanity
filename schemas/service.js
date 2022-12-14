@@ -1,3 +1,5 @@
+import { FileSearchableSelect } from '../components/FileSearchableSelect'
+
 export default {
     name: 'service',
     title: 'Services',
@@ -13,6 +15,18 @@ export default {
             title: 'Description',
             type: 'string'
         },
+        {
+          title: 'Detailed Info Description', 
+          name: 'detailedInfoDescription',
+          type: 'array', 
+          of: [{type: 'block'}]
+        },
+        {
+            name: 'videoId',
+            title: 'Video',
+            type: 'string',
+            inputComponent: FileSearchableSelect,
+        }
     ],
   
     preview: {
