@@ -16,6 +16,7 @@ import productVariant from './productVariant'
 import localeString from './locale/String'
 import localeText from './locale/Text'
 import localeBlockContent from './locale/BlockContent'
+import projectsOrder from './projectsOrder'
 
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
@@ -30,6 +31,7 @@ export default createSchema({
     service,
     project,
     clients,
+    projectsOrder,
     team,
     feedback,
     // When added to this list, object types can be used as
